@@ -23,14 +23,23 @@ FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
 AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE 
 OR OTHER DEALINGS IN THE SOFTWARE.
-==================================================================
-File: pi.urlms.php
---------------------------------------------------------
-Purpose: Short long URLs
 ========================================================
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
-ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
-LIMITED TO THE WARRANTIES OF MERCHANTABILITY-------
+*/
+
+$plugin_info = array(
+	'pi_name'		=> 'URL Made Simple',
+	'pi_version'		=> '1.0',
+	'pi_author'		=> 'Gonçalo Fontoura',
+	'pi_author_url'		=> 'http://gesf.org',
+	'pi_description'	=> 'Short long URLs',
+	'pi_usage'		=> URLMS::usage()
+);
+
+class URLMS {
+	
+	var $return_data;
+	
+	// ----------------------------------------
 	//  Plugin Usage
 	// ----------------------------------------
 	
